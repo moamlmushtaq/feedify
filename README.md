@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Feedify
 
-First, run the development server:
+Feedify is a powerful and flexible **feedback and suggestion management tool** designed to help you collect, manage, and analyze user feedback effortlessly. Built with modern web technologies, Feedify enables seamless integration and simple yet effective feedback handling for your team.
+
+> 🚀 **Currently in Beta**: Feedify is in the early stages of development. Some features might be incomplete, but we are actively working on improving and adding more functionalities. **Note**: There are currently some issues related to **Turbopack** in **Next.js 15**, which might cause unexpected behavior during development. These problems are being addressed as soon as possible.
+
+---
+
+## 🌟 Features
+
+- 📝 **Submit Feedback**: Users can easily submit feedback and suggestions.
+- 📊 **View Feedback**: Admins can view and manage all feedbacks submitted by users.
+- 🔄 **Feedback Status**: Mark feedback as **important** or **pending**.
+- 🔐 **Admin Dashboard**: An easy-to-use dashboard for managing feedback and user input.
+- 💾 **Real-time Database Integration**: Data is stored securely in MongoDB.
+- ⚡ **Fast & Responsive**: Built with **Next.js** and **Tailwind CSS**, ensuring fast load times and a smooth experience.
+- 🚧 **In Progress**: The project is currently in development, with several features yet to be implemented.
+
+---
+
+## 🧰 Tech Stack
+
+- [Next.js 15](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [Vercel](https://vercel.com/) (for deployment)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/moamlmushtaq/feedify.git
+cd feedify
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create `.env.local`
+
+You need to set up a `.env.local` file with the following environment variables:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+ADMIN_PASSWORD=your_admin-password
+```
+
+### 4. Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📦 Folder Structure
+
+```bash
+app/
+  admin/           → Admin dashboard page
+  feedback/        → Submit feedback page
+lib/
+  mongodb.ts       → MongoDB connection setup
+  nextauth.ts      → NextAuth.js setup
+models/
+  Feedback.ts      → Mongoose model for feedback
+  User.ts          → Mongoose model for users
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛣️ Roadmap
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [x] Submit feedback functionality
+- [x] Admin dashboard
+- [x] Feedback status management (important, pending)
+- [ ] Advanced filtering options for feedback
+- [ ] Improve UI/UX
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Why Feedify?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Feedify** is built with the aim of making feedback collection simple, accessible, and efficient. It enables companies to collect valuable insights from users and manage those suggestions in a streamlined way. Whether you're a small team or a large organization, **Feedify** helps you improve your product by prioritizing user feedback.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions, bug fixes, and feature requests are always welcome!  
+Feel free to fork the repo, open an issue, or submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧑‍💻 Author
+
+Made with ❤️ by [Moaml Mushtak](https://github.com/moamlmushtaq)  
+Part of the [Mushtak Group](https://github.com/moamlmushtaq)
+
+---
+
+## 🪪 License
+
+MIT — free to use, modify, and contribute.
